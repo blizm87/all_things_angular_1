@@ -12,7 +12,6 @@ Your app should have:
 - A list page, listing all our criminals
 - An about page, explaining what this application is for
 - A new page, to add a new criminal
-- A service for sharing criminal information between the list and new pages. Refactor the criminals controller so that all AJAX functionality is contained in this service, then use the service to make API requests from the individual controllers.
 
 ####Bonus
 
