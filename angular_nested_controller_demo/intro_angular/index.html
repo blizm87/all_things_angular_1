@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="IntroAngular">
+<head>
+  <title>Intro to Angular</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+</head>
+<body ng-controller="HomeController as home">
+
+  <div>Test: {{ 1+1 }}</div>
+  <div>Test: {{ home.test }}</div>
+  <div>Count: {{ home.count + 1}}</div>
+
+  <div ng-controller="CarController as carCont">
+    <div>Home Test: {{ home.test }}</div>
+    <div>Car Test: {{ carCont.test }}</div>
+    <ul>
+      <li ng-repeat="carCtrl in car"><p>Car: #{{carCtrl.num}}<br>Make: {{carCtrl.make}} <br> Model: {{carCtrl.model}}</p></li>
+    </ul>
+  </div>
+
+
+  <script src="js/app.js"></script>
+  <script src="js/controllers/HomeControllers.js"></script>
+  <script src="js/controllers/CarController.js"></script>
+</body>
+</html>
